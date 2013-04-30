@@ -10,7 +10,18 @@
 
 </p>
 <p>
-            <%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-primary btn-large" %>
-        </p>
+
+	<div class="hpsignup"
+
+	<form accept-charset="UTF-8" action="/users" class="simple_form user" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="b+plADcxJzr7Q5jXLgeMPJgZ2zM5/d4CdC5q2FeZX0c=" type="hidden"></div>
+  	<div class="control-group string required user_name"><div class="controls"><input class="string required" id="user_name" name="user[name]" placeholder="name" size="50" type="text"></div></div>
+  	<div class="control-group email required user_email"><div class="controls"><input class="string email required" id="user_email" name="user[email]" placeholder="email" size="50" type="email"></div></div>
+  	<div class="control-group password required user_password"><div class="controls"><input class="password required" id="user_password" name="user[password]" placeholder="password" size="50" type="password"></div></div>
+  	<div class="control-group password required user_password_confirmation"><div class="controls"><input class="password required" id="user_password_confirmation" name="user[password_confirmation]" placeholder="confirm password" size="50" type="password"></div></div>
+  	<input class="btn btn-primary" name="commit" value="Sign up" type="submit">
+
+  
+</form>
 </div>
+			
 <%end%>
