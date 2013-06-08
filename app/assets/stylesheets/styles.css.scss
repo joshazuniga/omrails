@@ -1,7 +1,7 @@
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=oxygen);*/
 
-$btnPrimaryBackground: green;
+$btnPrimaryBackground: black;
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 
@@ -9,7 +9,8 @@ $navbarBackground: white;
 @import 'bootstrap';
 
 body {
-	padding-top: 60px;
+	padding-top: 50px;
+	padding-bottom: 5px;
 }
 
 
@@ -57,6 +58,8 @@ body {
 
 .hpsignup {
 	float: right;
-	margin-top: -55px;
-	padding: 50;
+	margin-top: -155px;
+	padding: 10;
 }
+
+.loginnav .btn-primary {color: #131116;}

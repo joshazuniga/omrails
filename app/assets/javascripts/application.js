@@ -13,5 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.masonry.min.js
+//= require jquery.infinitescroll.min
 //= require bootstrap
 //= require_tree .
+//= require jquery.js
+//= require bootstrap.min.js
