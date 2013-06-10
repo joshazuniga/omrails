@@ -1,17 +1,19 @@
 <% if user_signed_in? %>
-
+Welcome
 <% else %>
 <div class="hero-unit">
-<h1>Welcome to one month rails</h1>
 <p>
-	you've found the home page for the
-<%=link_to "Joshua Zuniga", "http://joshazuniga.com" %>
+	Wondering if the person you're dating has ever cheated?</p>
 
+  <p>Ever been hurt and wish to tell the world what that person did to you? 
+  </p>
+<p>Ready to spread your relationship experience?
+<p> Sign up, share a picture, share your story </p>
 
 
 
 	<div class="hpsignup">
-		<p>New to OMRails? Sign up Today!!!</p>
+		<legend><font size="4">Sign Up</font></legend>
 	<form accept-charset="UTF-8" action="/users" class="simple_form user" method="post" novalidate="novalidate">
 		<div style="margin:0;padding:0;display:inline">
 			<input name="utf8" value="✓" type="hidden">
@@ -19,20 +21,21 @@
 		</div>
   	<div class="control-group string required user_name">
   		<div class="controls">
-  			<input class="string required" id="user_name" name="user[name]" placeholder="name" size="50" type="text"></div>
+  			<input class="string required" id="user_name" name="user[name]" placeholder="Name" size="50" type="text"></div>
   		</div>
   	<div class="control-group email required user_email">
   		<div class="controls">
-  			<input class="string email required" id="user_email" name="user[email]" placeholder="email" size="50" type="email"></div>
+  			<input class="string email required" id="user_email" name="user[email]" placeholder="Email" size="50" type="email"></div>
   		</div>
   	<div class="control-group password required user_password">
   		<div class="controls">
-  			<input class="password required" id="user_password" name="user[password]" placeholder="password" size="50" type="password"></div>
+  			<input class="password required" id="user_password" name="user[password]" placeholder="Password" size="50" type="password"></div>
   		</div>
   	<div class="control-group password required user_password_confirmation">
   		<div class="controls">
-  			<input class="password required" id="user_password_confirmation" name="user[password_confirmation]" placeholder="confirm password" size="50" type="password"></div>
+  			<input class="password required" id="user_password_confirmation" name="user[password_confirmation]" placeholder="Confirm Password" size="50" type="password"></div>
   		</div>
+
   	<input class="btn btn-primary" name="commit" value="Sign Up" type="submit">
  </form>
  </div>

@@ -10,7 +10,7 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <%= link_to "One Month Rails", root_path, class: "brand" %>
+      <%= link_to "Ex-Alert", root_path, class: "brand" %>
         
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse"> <!-- .nav, .navbar-search, .navbar-form, etc -->
@@ -37,17 +37,46 @@
       <!--  <li>Sign In</li> -->
  
  
-           <li class="dropdown" id="menu1">
+                      <li class="dropdown" id="menu1">
              <a class="dropdown-toggle" data-toggle="dropdown" href="#menu1">
                Login
                 <b class="caret"></b>
              </a>
              <div class="dropdown-menu">
-               <form style="margin: 0px" accept-charset="UTF-8" action="session_path(resource_name)" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" /></div>
+               <form style="margin: 0px" accept-charset="UTF-8" action="/users/sign_in" method="post" id="new_user" novalidate="novalidate">
+                <div style="margin:0;padding:0;display:inline">
+                  <input name="utf8" type="hidden" value="&#x2713;" />
+                  <input name="authenticity_token" type="hidden" value="4L/A2ZMYkhTD3IiNDMTuB/fhPRvyCNGEsaZocUUpw40=" />
+                </div>
+
                  <fieldset class='textbox' style="padding:10px">
-                   <input style="margin-top: 8px" type="text" placeholder="email" />
-                   <input style="margin-top: 8px" type="password" placeholder="Passsword" />
-                   <input class="btn btn-primary" name="commit" type="submit" value="Log in">                 </fieldset>
+                   
+                   <div class="control-group email required user_email">
+                    <div class="controls">
+                      <input class="string email required span3" id="user_email" name="user[email]" placeholder="Email" size="50" type="email" value="" /></div>
+                    </div>
+
+        <div class="control-group password optional user_password">
+          <div class="controls">
+            <input class="password optional span3" id="user_password" name="user[password]" placeholder="Password" size="50" type="password" /></div>
+          </div>
+
+                <div class="control-group boolean optional user_remember_me">
+                    <div class="controls">
+                    <input name="user[remember_me]" type="hidden" value="0" /><label class="checkbox"><input class="boolean optional" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />Remember me</label>
+                  </div>
+                </div>
+
+
+
+
+
+
+
+
+
+                  <input class="btn btn-primary" name="commit" type="submit" value="Sign in" />  
+                                </fieldset>
                </form>
              </div>
            </li>
@@ -63,4 +92,3 @@
     </div>
   </div>
 </div>
-
