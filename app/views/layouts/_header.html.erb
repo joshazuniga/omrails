@@ -35,16 +35,17 @@
           <% else %>         
         <!--    <li><%= link_to "Login", new_user_session_path %></li> -->
       <!--  <li>Sign In</li> -->
- 
- 
-                      <div class="bs-docs-example">
-            <ul class="nav nav-pills">
-                           <li class="dropdown">
-                <a class="dropdown-toggle" id="drop1" role="button" data-toggle="dropdown" href="#">
-                  Login
-                 <b class="caret"></b></a>
-                <ul id="menu1" class="dropdown-menu" role="menu" aria-labelledby="drop1">
 
+<li class="dropdown">
+  <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+    Login
+    <b class="caret"></b>
+  </a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+
+
+ 
+ 
              
                <form style="margin: 0px" accept-charset="UTF-8" action="/users/sign_in" method="post" id="new_user" novalidate="novalidate">
                 <div style="margin:0;padding:0;display:inline">
@@ -69,12 +70,6 @@
                     <input name="user[remember_me]" type="hidden" value="0" /><label class="checkbox"><input class="boolean optional" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" />Remember me</label>
                   </div>
                 </div>
-
-
-
-
-
-
 
 
 
